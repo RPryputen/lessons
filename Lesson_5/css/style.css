@@ -1,0 +1,115 @@
+/*! ====== Подключение шрифтов ===========*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700;1,800&display=swap');
+
+@font-face {
+	src: url('../fonts/Veles-Bold.woff2') format('woff2'), url('../fonts/Veles-Bold.woff') format('woff');
+	font-family: 'Veles';
+	font-style: normal;	
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	src: url('../fonts/Veles-Regular.woff2') format('woff2'), url('../fonts/Veles-Regular.woff') format('woff');
+	font-family: 'Veles';
+	font-style: normal;	
+	font-weight: 400;
+	font-display: swap;
+}
+
+/*! ===== Body =======*/
+
+body {
+	font-family: "Veles", sans-serif;
+	padding: 10px;
+	background-color: gray;
+	text-align: left;
+}
+
+/*! ===== Header =======*/
+
+.extra-bold-italic {
+	font-family: "Open Sans", serif;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 30px;	
+	text-shadow: 2px 2px 5px #000;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+
+.bold-italic {
+	font-family: "Open Sans", serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 24px;
+	padding-left: 30px ;
+	color: darkred;
+}
+
+
+/*! ======== main ============= */
+
+.list-john {
+	color: coral;
+	padding-left: 10px;
+}
+
+.jh-first-photo{
+	margin-left: 15%;
+}
+
+.jh-first-text {
+	text-align: justify;
+	text-transform: capitalize;
+	color: rgba(255, 215, 0, 0.5);
+	line-height: 1.2;
+	text-indent: 15px;
+	word-spacing: 5px;
+	}
+
+.you-know {
+	padding-top: 10px;
+	font-weight: 700;
+	font-size: 24px;
+	white-space: nowrap;
+	}
+
+.li-list {
+	text-align: right;
+	color: #FF4500;
+}
+
+.err-title {
+	text-decoration: line-through;
+	text-transform: lowercase;
+	margin-top: -15px;
+}
+
+.err-li-plus + li{
+	color: yellowgreen;
+}
+
+.err-li ~ ol {
+	color: green;
+}
+
+.li-more > li{
+	color: rebeccapurple;
+}
+
+.jh-name-second {
+	text-decoration: overline;
+}
+
+.jh-name-first { 
+	text-decoration: underline;
+}
+
+#john-fourth {
+	width: 100px;
+	margin: 10px;
+	
+}
