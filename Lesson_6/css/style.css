@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+	font-family: "Lato", serif;
+	max-width: 810px;
+	font-size: 16px;
+	margin-left: 237px;
+	color: #424551;
+	line-height: 25.6px;
+}
+
+.header-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 59.8px;
+	color: #1E212C;
+	margin-top: 110px;
+	margin-bottom: 40px;
+}
+
+img {
+	margin-bottom: 60px;
+}
+
+.text-main {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+
+.p-pad {
+	padding-bottom: 24px;
+}
+
+.text-quote {
+	margin: 48px 0;
+	padding-left: 58px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #1E212C;
+	line-height: 30px;
+}
+
+li {
+	padding-bottom: 4px;
+	padding-left: 32px;	
+}
+
+.text-second {
+	margin-bottom: 24px;
+}
+
+.list-width {
+	max-width: 600px;
+	margin-bottom: 24px;
+}
+
+
+
+/*!  ================= ДЗ 2 ===================== */
+
+footer {
+	margin-top: 100px;
+	max-width: 800px;
+}
+
+.overflow-scroll {
+	overflow: scroll;
+	max-height: 80px;
+}
+.display-inline {
+	background-color: gray;
+	margin-top: 20px;
+	display: inline;
+}
+
+.display-block { 
+	background-color: brown;
+	display: block;
+}
+
+.inline-block {
+	background-color: crimson;
+	display: inline-block;
+	padding-right: 55px;
+	margin-bottom: 30px;
+}
+
+.phantom-spaces{
+font-size: 0px;
+margin-bottom: 30px;
+}
+
+.space {
+	font-size: 39px;
+	background-color: blue;
+}
+
+.section {
+background-color: yellow;
+}
+
+.text9 {
+margin-bottom: 10px;
+}
+
+.link {
+display: inline-block;
+background-color: green;
+margin-bottom: 10px;
+}
+
+.border {
+	border-top: 2px solid black;
+	border-right: 3px dotted green;
+	border-bottom: 5px dashed yellow;
+	border-left: 6px double pink;
+	margin-bottom: 30px;
+}
+
+.outline {
+	outline: 15px solid black;
+	margin-bottom: 100px;
+}
+
+.border-radius {
+	background-color: hotpink;
+	padding: 50px;
+	border-radius: 65px 138px 76px 148px;
+	margin-bottom: 50px;
+}
+
+.box-shadow {
+	padding: 70px;
+	background-color: violet;
+	box-shadow: 56px -27px 25px 29px rgba(217,21,21,0.61);
+	margin-bottom: 50px;
+}
+	
+.circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 20px;
+	background-color: chocolate;
+	box-shadow: inset 5px 5px 5px 2px black;
+}
+
+.opacity {
+	padding-bottom: 24px;
+	opacity: 0.2;
+}
+
+.vis {
+	visibility: hidden;
+	margin-bottom: 30px;
+}
