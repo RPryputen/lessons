@@ -31,7 +31,7 @@ img {
 }
 
 .p-pad {
-	padding-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .text-quote {
@@ -44,7 +44,7 @@ img {
 }
 
 li {
-	padding-bottom: 4px;
+	margin-bottom: 4px;
 	padding-left: 32px;	
 }
 
