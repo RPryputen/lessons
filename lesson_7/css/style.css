@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+	font-family: "Lato", serif;
+	color: #424551;
+	line-height: 25.6px;
+}
+
+[class*="__container"] {
+	max-width: 810px;
+	margin: 0px auto;
+	
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 46px;
+	color: #1E212C;
+	line-height: 59.8px;
+	margin-bottom: 92px;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 60px;
+}
+
+.main-text {
+	font-weight: 700;
+	color: #1E212C;
+	line-height: 30px;
+	font-size: 20px;
+	margin-bottom: 24px;
+}
+
+.marg-bot {
+	margin-bottom: 24px;
+}
+
+.text-margb24 {
+	margin-bottom: 24px;
+}
+
+.quote-text {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	padding-left: 58px;
+	margin-bottom: 48px;
+}
+
+li {
+	padding-left: 32px;
+	margin-bottom: 4px;
+}
+
+
+/*! ====================ДЗ==================== */
+
+.font-test {
+	margin: 200px auto;
+	border: 2px solid black;
+	max-width: 1000px;
+	height: 1800px;
+	background: url("../img/test.jpg") center top no-repeat, url("../img/test_rose.jpg") center center / 500px 888px no-repeat fixed,  radial-gradient(ellipse at center, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); 
+}
+
