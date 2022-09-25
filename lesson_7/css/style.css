@@ -17,11 +17,16 @@ h1 {
 	font-size: 46px;
 	color: #1E212C;
 	line-height: 59.8px;
+}
+.header {
 	margin-bottom: 92px;
 }
 
 img {
 	max-width: 100%;
+}
+
+.img {
 	margin-bottom: 60px;
 }
 
@@ -54,8 +59,11 @@ li {
 
 /*! ====================ДЗ==================== */
 
+footer {
+	margin-top: 300px;
+}
 .font-test {
-	margin: 200px auto;
+	margin: 0 auto;
 	border: 2px solid black;
 	max-width: 1000px;
 	height: 1776px;
