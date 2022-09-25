@@ -166,3 +166,9 @@ ol {
 	margin-right: 15px;
 	color: green;
  }
+
+ .odd,
+ .even li::after {
+	content: " *";
+	color: red;
+ }
