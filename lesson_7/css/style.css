@@ -67,6 +67,6 @@ footer {
 	border: 2px solid black;
 	max-width: 1000px;
 	height: 1776px;
-	background: url("../img/test.jpg") center top no-repeat, url("../img/test_rose.jpg") center center / 500px 888px no-repeat fixed,  radial-gradient(ellipse at center, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); 
+	background: url("../img/test.jpg") center top no-repeat, url("../img/test_rose.jpg") center / 500px 888px no-repeat fixed,  radial-gradient(ellipse at center, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); 
 }
 
