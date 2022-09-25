@@ -82,14 +82,15 @@ h2 {
 	height: 16px;
 	display: inline-block;
 	margin-right: 8px;
+	margin-bottom: -2px;
 	content: "";
 }
 .list-second li:first-child::before {
-	background: url("../img/icons/Star.svg") 0 0 no-repeat;
+	background: url("../img/icons/Star.svg") 0 0px no-repeat;
 }
 
 .list-second li:nth-child(2)::before {
-	background: url("../img/icons/Play.svg") 0 0 no-repeat;
+	background: url("../img/icons/Play.svg") 0 0px no-repeat;
 }
 
 .list-second li:last-child::before {
@@ -109,6 +110,7 @@ main {
 footer {
 	font-size: 35px;
 	font-weight: 900;
+	margin-bottom: 500px;
 }
 
 .hw__container li{
@@ -165,4 +167,10 @@ ol {
 	margin-right: 15px;
 	color: green;
  }
+
+
+
+
+ 
+
 
