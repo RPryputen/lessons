@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"] {
+max-width: 1230px;
+margin: 0px auto;
+}
+
+body {
+	font-family: "Lato", serif;
+	color: #424551;
+	line-height: 160%;
+}
+
+h2 {
+	color: #1E212C;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+}
+
+.h2-mg-first {
+	margin-bottom: 40px;
+}
+
+.main-text {
+	margin-bottom: 48px;
+}
+
+.text-learn {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+
+.list-first li{
+	padding-left: 32px;
+	background: url("../img/icons/Vector.svg") 0 6px no-repeat;
+}
+
+.list-first li:not(:last-child) {
+	margin-bottom: 4px;	
+} 
+
+.mb-div {
+	margin-bottom: 204px;
+}
+
+.text-curator {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+
+.h2-mg-second {
+	margin-bottom: 16px;
+}
+
+.text-spec {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+
+.list-second {
+	font-weight: 700;
+	line-height: 160%;
+	margin-bottom: 32px;
+}
+
+.list-second li:not(:last-child) {
+	margin-bottom: 4px;
+}
+
+.list-second li::before {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 8px;
+	content: "";
+}
+.list-second li:first-child::before {
+	background: url("../img/icons/Star.svg") 0 0 no-repeat;
+}
+
+.list-second li:nth-child(2)::before {
+	background: url("../img/icons/Play.svg") 0 0 no-repeat;
+}
+
+.list-second li:last-child::before {
+	background: url("../img/icons/Human.svg") 0 0 no-repeat;
+}
+
+.main__container>*:last-child {
+	margin-bottom: 0px;
+}
+
+/*! ======================= ДЗ ================= */
+
+main {
+	margin-bottom: 300px;
+}
+
+footer {
+	font-size: 35px;
+	font-weight: 900;
+}
+
+.hw__container li{
+	margin-bottom: 20px;
+}
+
+.link-hover:hover {
+	color: green;
+}
+
+.link-active:active {
+	color: red;
+}
+
+.link-visited:visited {
+	color: yellow;
+}
+
+.link-focus:focus {
+	color: purple;
+	outline: 3px solid red;
+}
+
+ .link-target {
+	display: none;
+ }
+
+ .link-target:target {
+	color: orange;
+	display: block;
+ }
+
+ .first-of-type span:first-of-type {
+	color: aquamarine;
+ }
+
+ .odd li:nth-child(odd){
+	color: sienna;
+ }
+ .even li:nth-child(even){
+	color: hotpink;
+ }
+
+ol {
+	margin: 15px;
+	counter-reset: item;
+}
+
+ .odd,
+ .even li::before {
+	counter-increment: item;
+	content: counter(item) ".";
+	display: inline-block;
+	margin-right: 15px;
+	color: green;
+ }
+
