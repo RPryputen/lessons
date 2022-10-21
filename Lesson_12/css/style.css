@@ -1,0 +1,208 @@
+body {
+	background-color: #333;
+	padding: 30px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.section {
+}
+
+.section__body {
+}
+
+.section__item-transform {
+	background-color: goldenrod;
+	width: 300px;
+	height: 300px;
+}
+
+.section__item-transform:not(:last-child) {
+	margin-bottom: 65px;
+}
+
+.image {
+	width: 300px;
+	height: 300px;
+}
+
+.section__image-translate {
+	transform: translate(20px,20px);
+}
+
+.section__image-translate:hover {
+	transform: translate(0px,0px);
+	transition: all 0.3s ease 0s;
+}
+
+.section__image-scale {
+	transform: scale(0.5);
+}
+
+.section__image-scale:hover {
+	transform: scale(1);
+	transition: all 0.3s ease 0s;
+}
+
+.section__image-rotate {
+	transform: rotate(180deg);
+}
+
+.section__image-rotate:hover {
+	transform: rotate(360deg);
+	transition: all 0.3s ease 0s;
+}
+
+.section__image-skew {
+	transform: skew(-10deg, 20deg);
+}
+
+.section__image-skew:hover {
+	transform: skew(45deg,-10deg);
+	transition: all 0.3s ease 0s;
+}
+
+.section__image-matrix {
+	transform: matrix(0.91,0.47,0.77,0.95,0,0);
+}
+
+.section__image-matrix:hover {
+	transform:matrix(1.00,0.00,0.00,1.00,0,0);
+	transition: all 0.3s ease 0s;
+}
+
+.section__image-origin {
+	transform-origin: 0 0;
+	transform: rotate(120deg);
+}
+
+.section__item-transform:hover .section__image-origin {
+	transform: rotate(0deg);
+	transition: all 0.3s ease 0s;
+}
+
+.perspective {
+	perspective: 250px;
+}
+
+.perspective__image {
+	transform: rotateX(15deg);
+}
+
+.perspective__image-translate-three-d {
+	transform: translate3d(20px, 20px, 0px);
+}
+
+.perspective__image-translate-three-d-scale {
+	transform: scale3d(0.7, 0.6, 0.5);
+}
+
+.perspective__image-translate-three-d-rotate {
+	transform: rotate3d(1, 1, 1, 20deg);
+}
+
+.perspective__image-translate-three-d-matrix {
+	transform: matrix3d(0.6,-0.05,0.09,0.001,0.05,0.693,0.14,0.001,-0.09,-0.14,0.99,0,15,-20,25,1);
+}
+
+.style {
+	perspective: 350px;
+	background-color: rgba(102, 102, 102, 0.7);
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+}
+
+.style__image {
+	transform: rotateY(30deg);
+}
+
+.style__image-hidden {
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+
+.style:hover .style__image-hidden {
+	transform: rotateY(0deg);
+	transition: all 0.3s ease 0s;
+}
+
+.section {
+	margin-bottom: 150px;
+}
+
+
+/*! ========= HW ============= */
+
+.hw2 {
+	width: 1024px;
+	height: 768px;
+	position: relative;	
+	background: url('../img/G51.jpg') 0 0 / cover no-repeat;	
+}
+
+.beach__sun {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+	width: 200px;	
+}
+
+.beach__sun:hover {
+	transform: rotate(360deg);
+	transition: all 3s ease 0s;
+}
+
+.beach__gull {
+	position: absolute;
+	width: 100px;
+	top: 0px;
+	left: 850px;
+	transform: scale(0.6);
+}
+
+.beach__gull:hover {
+	left: 700px;
+	transform: scale(1.5);
+	transition: all 2s ease;
+}
+
+.flip__body {
+	position: relative;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+
+.flip__gull-second,
+.flip__gull-third {
+	position: absolute;
+	width: 150px;
+	height: 25%;
+	top: 600px;
+	left: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__gull-second {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #77608d;
+	backface-visibility: hidden;
+}
+.flip__gull-third {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
