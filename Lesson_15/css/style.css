@@ -89,7 +89,7 @@ body {
 	line-height: 1.25;
 }
 
-.action-header__auth:hover span{
+.actions-header__auth:hover span{
 	text-decoration: underline;
 }
 
@@ -298,7 +298,7 @@ body {
 	gap: 135px;
 	display: flex;	
 	position: relative;
-	z-index: 2;
+	z-index: 50;
 	
 }
 .why-createx__image {
@@ -347,9 +347,6 @@ body {
 	left: -32px;
 }
 
-.why-createx__decor {
-	
-}
 .decor-createx {
 	position: absolute;
 	width: 100%;
