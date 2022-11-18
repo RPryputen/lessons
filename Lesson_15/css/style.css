@@ -144,7 +144,7 @@ body {
 }
 .body-main__play::before{
 	content: "";
-	flex-direction: 0 0 52px;
+	flex: 0 0 52px;
 	width: 52px;
 	height: 52px;
 	border-radius: 50%;
