@@ -298,7 +298,7 @@ body {
 	gap: 135px;
 	display: flex;	
 	position: relative;
-	z-index: 50;
+	z-index: 3;
 	
 }
 .why-createx__image {
