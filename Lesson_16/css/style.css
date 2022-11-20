@@ -142,6 +142,7 @@ header {
 
 .contacts__img {
 	max-width: 100%;
+	transform: translateY(67px);
 }
 
 .form-contacts {
