@@ -199,7 +199,7 @@ header {
 }
 
 .form-contacts__msg {
-	width: 100%;
+	width: 100%;	
 	padding: 13px 16px;
 	min-height: 128px;
 	resize: vertical;
@@ -251,7 +251,7 @@ header {
 	line-height: 160%;
 }
 
-.form-contacts__button {
+.lastpart-form__button {
 	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 	border-radius: 4px;
 	letter-spacing: 0.5px;
@@ -276,17 +276,17 @@ header {
 		flex: 0 0 315px;		
 	}
 
-	.form-contacts__button {
+	.lastpart-form__button {
 		flex: 1 1 340px;
 	}
 	
 
-	.form-contacts__button span {
+	.lastpart-form__button span {
 		position: relative;
 		z-index: 2;
 	}
 	
-	.form-contacts__button::before {
+	.lastpart-form__button::before {
 		content: "";
 		position: absolute;
 		width: 100%;
@@ -299,6 +299,6 @@ header {
 		background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
 	}
 	
-	.form-contacts__button:hover::before {
+	.lastpart-form__button:hover::before {
 		opacity: 1;		
 	}
