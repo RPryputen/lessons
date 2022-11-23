@@ -298,8 +298,7 @@ body{
 }
 .why-createx__media img {
 	max-width: 100%;	
-	border-radius: 4px;
-	vertical-align: top;
+	border-radius: 4px;	
 }
 .why-createx__content {	
 	flex: 0 1 31.7%;
