@@ -390,7 +390,7 @@ body{
 	column-gap: 30px;
 }
 .cards__body {
-	flex: 1 1 48%;	
+	flex: 0 0 48.7%;	
 	display: flex;	
 	border: 1px solid #E5E8ED;
 	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
@@ -412,8 +412,9 @@ body{
 	left: 0px;
 }
 .cards__content {
+	flex-grow: 1;
 	padding: 31px 32px;
-	align-self: center;	
+	align-self: center;
 }
 .cards__job-title:not(:last-child){
 	margin-bottom: 21px;
@@ -429,16 +430,14 @@ body{
 }
 .cards__price-name {
 	display: flex;	
+	gap:8px;
+	
 }
 .cards__price{
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.5;
 	color: #FF4242;
-}
-.cards__price:not(:last-child),
-.cards__symbol:not(:last-child){
-	margin-right: 8px;
 }
 .cards__symbol {
 	color: #787A80;
@@ -448,7 +447,7 @@ body{
 .cards__name{
 	font-size: 18px;
 	line-height: 1.5;
-	color: #787A80;
+	color: #787A80;	
 }
 .cards__job-title:not(:last-child){
 	margin-bottom: 21px;
