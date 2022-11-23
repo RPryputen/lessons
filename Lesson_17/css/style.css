@@ -292,8 +292,7 @@ body{
 	display: flex;
 	gap: 135px;	
 }
-.why-createx__media {
-	align-self: baseline;
+.why-createx__media {	
 	flex: 0 0 57.318%;	
 }
 .why-createx__media img {
@@ -301,6 +300,7 @@ body{
 	border-radius: 4px;	
 }
 .why-createx__content {	
+	align-self: center;
 	flex: 0 1 31.7%;
 }
 .why-createx__title{
