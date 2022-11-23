@@ -399,8 +399,8 @@ body{
 .cards__media {
 		flex-shrink: 0;	
 		position: relative;
-		min-height: 214px;
-		min-width: 214px;		
+		padding-bottom: 214px;
+		width: 214px;		
 }
 .cards__media img {
 	width: 100%;
