@@ -294,14 +294,14 @@ body{
 }
 .why-createx__media {
 	align-self: center;
-	flex: 1 1 73%;/*  73 */
+	flex: 0 0 57.318%;
 }
 .why-createx__media img {
 	max-width: 100%;	
 	border-radius: 4px;
 }
 .why-createx__content {	
-	flex: 0 1 40.383%;
+	flex: 0 1 31.7%;
 }
 .why-createx__title{
 	font-weight: 900;
