@@ -535,6 +535,9 @@ body{
 	.why-createx__list:not(:last-child){
 		margin-bottom: 15px;
 	}
+	.courses-block {
+		padding-bottom: 40px;
+	}
 }
 
 @media (max-width:985px) {
@@ -720,10 +723,7 @@ body{
 	.courses__flextitle:not(:last-child) {
 		flex-direction: column;
 		margin-bottom: 25px;
-	}
-	.courses-block {
-		padding-bottom: 50px;
-	}
+	}	
 }
 
 @media (max-width:322px){
