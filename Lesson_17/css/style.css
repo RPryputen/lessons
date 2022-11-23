@@ -412,9 +412,8 @@ body{
 	left: 0px;
 }
 .cards__content {
+	flex-grow: 1;
 	padding: 31px 32px;
-	align-self: center;
-	
 }
 .cards__job-title:not(:last-child){
 	margin-bottom: 21px;
