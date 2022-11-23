@@ -397,10 +397,9 @@ body{
 	border-radius: 6px;
 }
 .cards__media {
-		flex-shrink: 0;	
 		position: relative;
 		padding-bottom: 214px;
-		width: 214px;		
+		min-width: 214px;		
 }
 .cards__media img {
 	width: 100%;
