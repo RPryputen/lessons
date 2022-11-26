@@ -522,8 +522,7 @@ body{
 	content: "";
 	background: url('../img/icons/Star.svg') no-repeat;
 	width: 16px;
-	height: 16px;
-	background-image: green;
+	height: 16px;	
 	top: 2px;
 	left: 0px;
 	position: absolute;
@@ -536,8 +535,7 @@ body{
 	content: "";
 	background: url('../img/icons/like.svg') no-repeat;
 	width: 16px;
-	height: 16px;
-	background-image: green;
+	height: 16px;	
 	top: 2px;
 	left: 0px;
 	position: absolute;
@@ -550,8 +548,7 @@ body{
 	content: "";
 	background: url('../img/icons/library.svg') no-repeat;
 	width: 16px;
-	height: 16px;
-	background-image: green;
+	height: 16px;	
 	top: 2px;
 	left: 0px;
 	position: absolute;
@@ -564,8 +561,7 @@ body{
 	content: "";
 	background: url('../img/icons/chat.svg') no-repeat;
 	width: 16px;
-	height: 16px;
-	background-image: green;
+	height: 16px;	
 	top: 2px;
 	left: 0px;
 	position: absolute;
