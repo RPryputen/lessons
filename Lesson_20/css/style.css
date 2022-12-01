@@ -649,6 +649,7 @@ h6 {
   border-radius: 4px;
   height: 36px;
   padding: 8px 35px 9px 12px;
+  color: #FFFFFF;
 }
 
 .signup-news__email:not(:last-child) {
@@ -683,10 +684,6 @@ h6 {
   font-size: 12px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.signup-news__email:focus {
-  color: #FFFFFF;
 }
 
 .signup-news__btn::after {
