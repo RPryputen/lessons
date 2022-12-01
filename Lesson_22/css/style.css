@@ -1,0 +1,47 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main{
+	flex-grow: 1;
+}
+
+[class*="__container"]{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+body {
+	background-color: grey;
+	padding-top: 150px;
+	font-size: 18px;
+}
+
+.js {
+	padding: 50px 50px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+}
+
+.js__title {
+	font-size: 36px;
+	text-align: center;	
+}
+
+.js__first,
+.js__second,
+.js__third,
+.js__title {
+	margin-bottom: 12px;
+}
+
+p {
+	margin-bottom: 8px;
+	line-height: 1.2;
+}
