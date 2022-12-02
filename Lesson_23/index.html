@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 22</title>
+</head>
+
+<body>
+	<header class="header"></header>
+	<main class="page">
+		<div class="page__container js">
+			<div class="js__first">
+				<h2 class="js__title">JS Домашка 1</h2>
+				<p class="js__subtitle">//Вариант 1 (должен Вернуть 12)</p>
+				<p>console.log('35' + - "22"); // не правильно, + стринг не переводить автоматом в намбер.</p>
+				<p class="js__subtitle">//Вариант 3 (должен вернуть True)</p>
+				<p>// console.log('558' > 22++); // не правильно, инкремент/дикремент можно исользовать только к переменной
+				</p>
+				<p class="js__subtitle">//Вариант 4 (должен вернуть 1)</p>
+				<p>
+					let usersCounter = 0;
+					let newUsers = usersCounter++; // не верно, вернёт 0, так как инкремент ++ стоит после переменной, а надо
+					до.
+					console.log(newUsers);
+				</p>
+				<p class="js__subtitle">//Вариант 5 (должно вернуть 18)</p>
+				<p>console.log(!false && 11 || 18 && !''); // не верно, потому что !false означает true и 11 тоже true, в
+					итоге оно берёт значение 11</p>
+				<p class="js__subtitle">Вариант 6 (не указаны условия задачи...)</p>
+				<p>
+					let name = 0;
+					console.log(name?? "Без имени"); // возвращает первый аргумент, если он не null или undefined, в данном
+					случае вернёт 0
+				</p>
+			</div>
+			<div class="js__second">
+				<h2 class="js__title">JS Домашка 2</h2>
+				<p>Вариант 1 - вернёт Ложь, потому что === означает строгое равенство, и не переведёт строку в число'</p>
+				<p>Вариант 2 - верён Правду, потому что == переведёт строку в число</p>
+				<p>Вариант 3 - вернёт Правду, потому что 92 больше 11 (строку переведёт в число), и 58 меньше 100</p>
+				<p>Вариант 4 - вернёт Правду, потому что 0 это false по умолчанию</p>
+			</div>
+			<div class="js__third">
+				<h2 class="js__title">JS Домашка 3 (in JS file)</h2>
+				<p>Задача 2 - последний результат будет 1, так как 0 это False</p>
+			</div>
+			<div class="js__fourht">
+				<h2 class="js__title">JS Домашка 4 (in JS file)</h2>
+			</div>
+			<div class="js__fifth">
+				<h2 class="js__title">JS Домашка 5 (in JS file)</h2>
+				<p>Задача 1 - запись не верна, не правильные кавычки ', должны быть `</p>
+				<p>Задача 3 - не верно, + стринг не переводить автоматом в намбер.</p>
+				<p>Задача 6 - получим false так как после символа под индексом 4 ( "а" ), нету подстроки "лан"</p>
+			</div>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
