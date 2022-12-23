@@ -5235,9 +5235,9 @@
                     if (targetElement) if (up && this.allowUp || down && this.allowDown) e.stopPropagation(); else if (e.cancelable) e.preventDefault();
                 }
                 if (!this.clickOrTouch || e.target.closest(this.options.noEventSelector)) return;
-                let yCoord = this._yP - e.changedTouches[0].pageY;
-                this.checkScroll(yCoord, targetElement);
-                if (this.goScroll && Math.abs(yCoord) > 20) this.choiceOfDirection(yCoord);
+                let xCoord = this._xP - e.changedTouches[0].pageX;
+                this.checkScroll(xCoord, targetElement);
+                if (this.goScroll && Math.abs(xCoord) > 20) this.choiceOfDirection(xCoord);
             }
             touchUp(e) {
                 this._eventElement.removeEventListener("touchend", this.events.touchup);
