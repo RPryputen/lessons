@@ -5252,7 +5252,6 @@
                 }
             }
             wheel(e) {
-                if (e.target.closest(this.options.noEventSelector)) return;
                 const yCoord = e.deltaY;
                 const targetElement = e.target.closest(`.${this.options.activeClass}`);
                 this.checkScroll(yCoord, targetElement);
