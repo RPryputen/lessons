@@ -3283,7 +3283,7 @@
     let mySwiper;
     function initSliders() {
         if (window.innerWidth <= 767.98 && "false" == slider.dataset.mobile) if (document.querySelector(".slider-tariff__slider")) {
-            new core(".slider-tariff__slider", {
+            mySwiper = new core(".slider-tariff__slider", {
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
