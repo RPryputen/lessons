@@ -239,7 +239,7 @@ textarea {
   display: block;
   padding: 0px 20px;
   width: 100%;
-  border: 1px solid #eee;
+  border: 1px solid #F7F7FD;
 }
 
 .input._form-error {
@@ -249,6 +249,282 @@ textarea {
 textarea.input {
   resize: none;
   padding: 0px 0px;
+}
+
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+  pointer-events: none;
+  z-index: 149;
+}
+
+.popup-show body::after {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: visibility 0.8s ease 0s;
+  -o-transition: visibility 0.8s ease 0s;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto;
+}
+
+.popup_show .popup__content {
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  visibility: hidden;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.lock .popup__content {
+  visibility: visible;
+}
+
+.popup__close {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+
+.popup__close::before,
+.popup__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #685ed6;
+  width: 100%;
+  height: 2.87px;
+}
+
+.popup__close::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.popup__close::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.signin-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(12.5rem, 21.25rem);
+  grid-template-columns: minmax(12.5rem, 21.25rem);
+  padding: 6.5625rem 4.375rem 8.6875rem 4.375rem;
+}
+
+.signin-form__title {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  color: #685ed6;
+  text-align: center;
+}
+
+.signin-form__title:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.signin-form__input {
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* 24/16 */
+  padding: 0.4375rem 3.75rem 0.4375rem 1.25rem;
+  background: #f7f7fd;
+  border-radius: 4px;
+}
+
+.signin-form__input:focus {
+  border: 1px solid #605dec !important;
+}
+
+.signin-form__line {
+  position: relative;
+  margin-bottom: 1.5625rem;
+}
+
+.signin-form__viewpass {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.25rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.signin-form__viewpass svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.signin-form__body {
+  text-align: right;
+}
+
+.signin-form__body:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.signin-form__forget {
+  font-family: "Nunito Sans";
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: #605dec;
+  position: relative;
+}
+
+.signin-form__forget::before {
+  content: "";
+  position: absolute;
+  bottom: -0.1875rem;
+  left: 0;
+  width: 0;
+  background-color: #33AFE1;
+  height: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.signin-form__button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(12.5rem, 21.25rem);
+  grid-template-columns: minmax(12.5rem, 21.25rem);
+  padding: 6.5625rem 4.375rem 8.6875rem 4.375rem;
+}
+
+.signup-form__title {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  color: #685ed6;
+  text-align: center;
+}
+
+.signup-form__title:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.signup-form__line {
+  position: relative;
+}
+
+.signup-form__line:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+
+.signup-form__input {
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* 24/16 */
+  padding: 0.4375rem 3.75rem 0.4375rem 1.25rem;
+  background: #f7f7fd;
+  border-radius: 4px;
+}
+
+.signup-form__input:focus {
+  border: 1px solid #605dec !important;
+}
+
+.signup-form__viewpass {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.25rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.signup-form__viewpass svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.signup-form__button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .spollers {
@@ -379,8 +655,18 @@ textarea.input {
   top: 0;
   left: 0;
   z-index: 50;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+}
+
+.header::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  -webkit-backdrop-filter: blur(1.25rem);
+          backdrop-filter: blur(1.25rem);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header__container {
@@ -422,6 +708,13 @@ textarea.input {
           align-items: center;
   gap: 2.1875rem;
   min-height: 6.5rem;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+._header-scroll .menu {
+  min-height: 3.125rem;
 }
 
 .action-menu {
@@ -508,10 +801,24 @@ textarea.input {
 }
 
 .footer__link {
+  position: relative;
   font-size: 1rem;
   line-height: 1.625;
   /* 26/16 */
   color: #eeeff4;
+}
+
+.footer__link::before {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: -0.25rem;
+  left: 0;
+  height: 0.0625rem;
+  background-color: #685ed6;
 }
 
 .copyright {
@@ -1008,6 +1315,7 @@ textarea.input {
 
 .testimonials__container::before {
   content: "";
+  z-index: -1;
   position: absolute;
   width: 8.9375rem;
   height: 7.5625rem;
@@ -1601,7 +1909,7 @@ textarea.input {
     height: 0.625rem;
     border-radius: 50%;
     border: 2px solid #685ed6;
-    background: #685ed6;
+    background: transparent;
   }
 
   .slider-tariff__pagination .swiper-pagination-bullet:not(:last-child) {
@@ -1609,7 +1917,7 @@ textarea.input {
   }
 
   .slider-tariff__pagination .swiper-pagination-bullet-active {
-    background: transparent;
+    background: #685ed6;
   }
 }
 
@@ -1974,7 +2282,7 @@ textarea.input {
     height: 0.625rem;
     border-radius: 50%;
     border: 2px solid #685ed6;
-    background: #685ed6;
+    background: transparent;
   }
 
   .slider-steps__pagination .swiper-pagination-bullet:not(:last-child) {
@@ -1982,7 +2290,7 @@ textarea.input {
   }
 
   .slider-steps__pagination .swiper-pagination-bullet-active {
-    background: transparent;
+    background: #685ed6;
   }
 
   .slider-testimonials__border {
@@ -2069,6 +2377,16 @@ textarea.input {
 @media (max-width: 47.99875em) and (max-width: 23.375em) {
   .slider-steps__pagination {
     left: 40%;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .signin-form {
+    padding: 3.125rem 1.5625rem;
+  }
+
+  .signup-form {
+    padding: 3.125rem 1.5625rem;
   }
 }
 
@@ -2802,6 +3120,22 @@ textarea.input {
 
   .button--light:hover {
     background: #C39BFB;
+  }
+
+  .signin-form__input:hover {
+    border: 1px solid #e8e6f8;
+  }
+
+  .signin-form__forget:hover::before {
+    width: 100%;
+  }
+
+  .signup-form__input:hover {
+    border: 1px solid #e8e6f8;
+  }
+
+  .footer__link:hover::before {
+    width: 100%;
   }
 }
 

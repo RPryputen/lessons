@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230104154947">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230104210515">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +14,13 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="250" data-lp class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
 					<a href="#" class="header__logo"><picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Logo"></picture><span>tocha</span></a>
 					<div data-da=".header__container, 767.98" class="menu__action action-menu">
-						<button type="button" class="action-menu__signin button button--light">Вход</button>
-						<button type="button" class="action-menu__signup button">Регистрация</button>
+						<button type="button" data-popup="#signin" class="action-menu__signin button button--light">Вход</button>
+						<button type="button" data-popup="#signup" class="action-menu__signup button">Регистрация</button>
 					</div>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
@@ -311,7 +311,64 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230104154947"></script>
+	<div id="signin" aria-hidden="true" class="popup popup--signin">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form action="#" method="get" class="signin-form">
+						<h2 class="signin-form__title">Вход</h2>
+						<div class="signin-form__line">
+							<input data-placeholder-nohide autocomplete="off" type="text" name="form[tel]" data-required data-error="Введите правильный номер" placeholder="Телефон" class="signin-form__input input">
+						</div>
+						<div class="signin-form__line">
+							<input data-placeholder-nohide autocomplete="off" type="password" name="form[pass]" data-required data-error="Пароль указан не верно" placeholder="Пароль" class="signin-form__input input">
+							<button class="signin-form__viewpass form__viewpass" type="button">.<svg>
+									<use xlink:href="img/icons/icons.svg#eye-close"></use>
+								</svg></button>
+						</div>
+						<div class="signin-form__body"><a href="#" class="signin-form__forget"><span>Напомнить пароль</span></a></div>
+						<button type="submit" class="signin-form__button button">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="signup" aria-hidden="true" class="popup popup--signup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form action="#" method="get" class="signup-form">
+						<h2 class="signup-form__title">Регистрация</h2>
+						<div class="signup-form__line">
+							<input data-placeholder-nohide autocomplete="off" type="text" name="form[tel]" data-required data-error="Введите правильный телефон" placeholder="Телефон" class="signup-form__input input">
+						</div>
+						<div class="signup-form__line">
+							<input data-placeholder-nohide autocomplete="off" type="text" name="form[mail]" data-required="email" data-error="Введите корректную почту" placeholder="Электронная почта" class="signup-form__input input">
+						</div>
+						<div class="signup-form__line signup-form__line">
+							<input data-placeholder-nohide autocomplete="off" type="password" name="form[pass]" data-required data-error="Введите пароль" placeholder="Пароль" class="signup-form__input input">
+							<button class="signup-form__viewpass form__viewpass" type="button">.<svg>
+									<use xlink:href="img/icons/icons.svg#eye-close"></use>
+								</svg></button>
+						</div>
+						<div class="signup-form__line signup-form__line">
+							<div class="signup-form__line signup-form__line--2">
+								<input data-placeholder-nohide autocomplete="off" type="password" name="form[pass]" data-required data-error="Пароли не совпадают" placeholder="Повторите пароль" class="signup-form__input input">
+								<button class="signup-form__viewpass form__viewpass" type="button">.<svg>
+										<use xlink:href="img/icons/icons.svg#eye-close"></use>
+									</svg></button>
+							</div>
+						</div>
+						<button type="submit" class="signup-form__button button">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230104210515"></script>
 </body>
 
 </html>
