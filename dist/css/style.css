@@ -2266,10 +2266,6 @@ body::after {
     margin-bottom: 2.125rem;
   }
 
-  .slider-steps__number span::before {
-    top: -1.25rem;
-  }
-
   .slider-steps__text:not(:last-child) {
     margin-bottom: 2.125rem;
   }
