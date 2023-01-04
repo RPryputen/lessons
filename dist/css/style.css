@@ -1419,6 +1419,7 @@ body::after {
 }
 
 .slider-testimonials__pagination {
+  cursor: pointer;
   position: absolute;
   bottom: -1.6875rem;
   left: 48%;
@@ -2260,6 +2261,10 @@ body::after {
 
   .slider-steps__slide:nth-child(even) .slider-steps__text {
     margin-bottom: 2.125rem;
+  }
+
+  .slider-steps__number span::before {
+    top: -1.25rem;
   }
 
   .slider-steps__text:not(:last-child) {
